@@ -1,0 +1,17 @@
+{
+    "name": "MDN in Your Pocket",
+    "version": "1.0",
+    "manifest_version": 2,
+    "permissions": ["https://codepen.io/", "https://static.codepen.io/assets/embed/ei.js"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["popup.js", "codeMirror.js"]
+      }
+    ],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_title": "clothes"
+  }
+}
+
